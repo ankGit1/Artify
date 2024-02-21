@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* ...........................navbar.................... */
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  padding: 16px;
+  background: #0c2430;
+  color: white;
+  overflow-x: auto;
+  z-index: 1200;
+}
+.brand_name {
+  margin: 0;
+}
+.a_tags {
+  display: flex;
+}
+.a_tags span {
+  padding: 0 20px;
+  cursor: pointer;
+  border-right: 2px solid;
+}
+.favLink {
+  border-right: none;
+  color: white;
+  margin: 0 20px;
+  text-decoration: none;
+}
+
+/* .........................display.................... */
+#display,
+.favourite_comp {
+  padding: 20px;
+}
+#categoryTitle {
+  margin-top: 0;
+}
+#diaplay_images {
+  display: grid;
+  grid-column-gap: 14px;
+  grid-row-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+}
+#diaplay_images img {
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+  cursor: pointer;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+#diaplay_images img:hover {
+  filter: brightness(0.9);
+}
+.image_contain_div {
+  position: relative;
+  height: 420px;
+  background: #00000014;
+  box-shadow: 0 0 3px 0px #ab9a9a;
+  border-radius: 5px;
+}
+.favouriteBtn,
+.removeImg {
+  width: 100%;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  background: black;
+  color: white;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.favouriteBtn:hover,
+.removeImg:hover {
+  background: #000000d9;
+}
+
+/* ........................popup............................... */
+
+#popup {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #0000009c;
+  padding: 20px 0;
+  overflow: auto;
+  z-index: 1500;
+  justify-content: center;
+  display: none;
+}
+#cutBtn {
+  height: 50px;
+  width: 50px;
+  background: transparent;
+  color: white;
+  border: none;
+  font-size: 30px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.popup_main {
+  width: 700px;
+  height: 80%;
+  background: white;
+  overflow-y: auto;
+  padding: 20px;
+  line-height: 22px;
+  word-spacing: 1px;
+  border-radius: 5px;
+  margin-right: 0;
+}
+.flex_popup {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 20px;
+}
+.flex_popup img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.flex_info {
+  flex: 1;
+  padding: 0 16px;
+}
+.flex_info p {
+  margin: 0 0 16px;
+  color: #000000d4;
+}
+.extra_info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.user_info img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.user_info div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#prevBtn {
+  position: relative;
+  left: 0;
+  top: 50%;
+  height: 50px;
+}
+#nextBtn {
+  position: relative;
+  left: 800px;
+  top: 50%;
+  height: 50px;
+}
+
+/* .........................toggle...................... */
+#toggleBtn {
+  display: none;
+  padding: 5px;
+}
+
+#toggle {
+  display: none;
+  position: fixed;
+  width: 100%;
+  flex-direction: column;
+  gap: 10px;
+  background: #0c2430;
+  color: white;
+  padding: 10px 0;
+  z-index: 100;
+}
+
+@media screen and (max-width: 450px) {
+  .a_tags {
+    display: none;
+  }
+  #toggleBtn {
+    display: block;
+  }
+  .a_tags span {
+    border-right: none;
+  }
+  #diaplay_images {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .popup_main {
+    margin-right: 10px;
+  }
+  .flex_popup img {
+    width: 100%;
+  }
+  #prevBtn {
+    position: absolute;
+    left: 31px;
+  }
+  #nextBtn {
+    position: absolute;
+    left: 90%;
+  }
+}

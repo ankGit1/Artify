@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your JavaScript Playground</title>
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <div class="navbar">
+        <div><h2 class="brand_name">Artify</h2></div>
+        <div class="a_tags">
+          <span name="Modern Art">Modern Art</span>
+          <span name="Classic Art">Classic</span>
+          <span name="Architecture Art">Architecture</span>
+          <span name="Cubism Art">Cubism</span>
+          <span name="Abstract Art">Abstract Art</span>
+          <a href="./favourite.html" class="favLink">Favourite</a>
+        </div>
+        <!-- created a toggle button here -->
+        <button id="toggleBtn">|||</button>
+      </div>
+      <!--toggle div which only display when screen size reduce-->
+      <div class="a_tags" id="toggle">
+        <span name="Modern Art">Modern Art</span>
+        <span name="Classic Art">Classic</span>
+        <span name="Architecture Art">Architecture</span>
+        <span name="Cubism Art">Cubism</span>
+        <span name="Abstract Art">Abstract Art</span>
+        <a href="./favourite.html" class="favLink">Favourite</a>
+      </div>
+      <!-- all images will display in this section -->
+      <div id="display">
+        <h1 id="categoryTitle"></h1>
+        <div id="diaplay_images"></div>
+      </div>
+      <!-- detail info of image will display here -->
+      <div id="popup">
+        <button id="cutBtn">X</button>
+        <button id="prevBtn">&#11164;</button>
+        <button id="nextBtn">&#11166;</button>
+      </div>
+    </div>
+
+    <script type="module" src="./src/js/index.jsx"></script>
+  </body>
+</html>

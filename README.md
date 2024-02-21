@@ -1,14 +1,14 @@
-## Artify
+# Artify
 
 Artify is a web application that allows users to browse images of various artworks categorized by genre. Users can select an image to view its details and can also add or remove images from their favorites section.
 
-# Features
+## Features
 
 - Browse images of artworks categorized by genre.
 - View details of selected artworks.
 - Add or remove images from the favorites section.
 
-# Technologies Used
+## Technologies Used
 
 Artify is built using the following technologies:
 
@@ -17,11 +17,11 @@ CSS
 JavaScript
 Vite (a build tool for modern web development)
 
-# Usage
+## Usage
 
 To use Artify, simply open the web application in your browser. From there, you can navigate through the different categories of artworks, select an image to view its details, and add or remove images from your favorites section.
 
-# Installation
+## Installation
 
 If you want to run Artify locally, follow these steps:
 
